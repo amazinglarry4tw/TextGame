@@ -8,8 +8,16 @@ namespace TextGame
 {
     public class PlayerCharacter : BasicPlayerCharacter
     {
+        public Guid Location;
+
         public PlayerCharacter()
         {
+            Location = Guid.Empty;
+        }
+
+        public void UpdatePlayerLocation(Guid roomId)
+        {
+            Location = roomId;
         }
     }
 }
