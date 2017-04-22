@@ -1,6 +1,0 @@
-C:\Users\AL\Desktop\AnotherTestGame\TextGame\TextGame\bin\Debug\TextGame.exe.config
-C:\Users\AL\Desktop\AnotherTestGame\TextGame\TextGame\obj\Debug\TextGame.csprojResolveAssemblyReference.cache
-C:\Users\AL\Desktop\AnotherTestGame\TextGame\TextGame\bin\Debug\TextGame.exe
-C:\Users\AL\Desktop\AnotherTestGame\TextGame\TextGame\bin\Debug\TextGame.pdb
-C:\Users\AL\Desktop\AnotherTestGame\TextGame\TextGame\obj\Debug\TextGame.exe
-C:\Users\AL\Desktop\AnotherTestGame\TextGame\TextGame\obj\Debug\TextGame.pdb
