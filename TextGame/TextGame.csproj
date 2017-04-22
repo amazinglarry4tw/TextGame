@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="BasicEntity.cs" />
     <Compile Include="BasicPlayerCharacter.cs" />
+    <Compile Include="CoreStats.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
