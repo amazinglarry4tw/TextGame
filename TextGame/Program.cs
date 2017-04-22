@@ -10,8 +10,8 @@ namespace TextGame
 	{
 		static void Main(string[] args)
 		{
-            BasicPlayerCharacter pc = new BasicPlayerCharacter();
-            pc.Stats.Constitution = 90;
+            PlayerCharacter pc = new PlayerCharacter();
+            pc.Stats.Constitution = 0;
             pc.GenerateInfo();
             pc.Name = "Jeremy";
 

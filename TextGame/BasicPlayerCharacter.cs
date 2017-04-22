@@ -24,7 +24,7 @@ namespace TextGame
 
         protected void CalculateBaseHealth()
         {
-            Health = 20 + Convert.ToInt32(Stats.Constitution * 0.9);
+            Health = 20 + Convert.ToInt32(Stats.Constitution * 0.33);
         }
     }
 }
