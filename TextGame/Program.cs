@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace TextGame
@@ -56,6 +57,9 @@ namespace TextGame
                     case (int)ActionType.SPEECH:
                         Console.WriteLine("The player is trying to speak.");
                         break;
+                    case (int)ActionType.MOVEMENT:
+                        Console.WriteLine("The player is trying to move.");
+                        break;
                     default:
                         Console.WriteLine("Not sure what the player is doing.  It has not been captured");
                         break;
@@ -65,13 +69,25 @@ namespace TextGame
 
         static int EvaluateType(string input)
         {
-            input.Trim();
+            string temp = input.Trim();
             int type = 0;
+            string[] parsedInput = ParseInput(temp);
 
-            if (input[0].Equals('\'') || input[0].Equals('"'))
-                return (int)ActionType.SPEECH;
+            if (input[0].Equals('\'') || input[0].Equals('"') || parsedInput[0] == "say")
+                type = (int)ActionType.SPEECH;
+            if (parsedInput[0].Equals("go") || parsedInput[0].Equals("move"))
+                type = (int)ActionType.MOVEMENT;
             else
-                return 0;
+                type = 0;
+
+            return type;
+        }
+
+        static string[] ParseInput(string input)
+        {
+            string temp = Regex.Replace(input, @"\s+", " ");
+            string[] words = temp.Split(' ');
+            return words;
         }
 	}
 }
