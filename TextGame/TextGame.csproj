@@ -47,6 +47,7 @@
     <Compile Include="BasicPlayerCharacter.cs" />
     <Compile Include="BasicRoom.cs" />
     <Compile Include="CoreStats.cs" />
+    <Compile Include="InputManager.cs" />
     <Compile Include="PlayerCharacter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
