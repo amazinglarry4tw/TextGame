@@ -75,7 +75,7 @@ namespace TextGame
 
             if (input[0].Equals('\'') || input[0].Equals('"') || parsedInput[0] == "say")
                 type = (int)ActionType.SPEECH;
-            if (parsedInput[0].Equals("go") || parsedInput[0].Equals("move"))
+            else if (parsedInput[0].Equals("go") || parsedInput[0].Equals("move"))
                 type = (int)ActionType.MOVEMENT;
             else
                 type = 0;
