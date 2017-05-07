@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActionManager.cs" />
     <Compile Include="BasicEntity.cs" />
     <Compile Include="BasicPlayerCharacter.cs" />
     <Compile Include="BasicRoom.cs" />

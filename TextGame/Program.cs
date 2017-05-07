@@ -11,6 +11,7 @@ namespace TextGame
         static InputManager IM = new InputManager();
         static PlayerCharacter pc = new PlayerCharacter();
         static RoomManager rm = new RoomManager();
+        public static ActionManager am = new ActionManager();
         static string Input = string.Empty;
 
         static void Main(string[] args)

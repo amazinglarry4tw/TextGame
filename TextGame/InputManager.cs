@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace TextGame
 {
-    enum ActionType { MOVEMENT = 1, SPEECH, ATTACK, ROLEPLAY };
-
     public class InputManager
     {
+        enum ActionType { MOVEMENT = 1, SPEECH, ATTACK, ROLEPLAY };
+
         public InputManager()
         {
         }
@@ -41,9 +41,9 @@ namespace TextGame
 
         protected int EvaluateInputType(string[] parsedInput)
         {
-            int type = 0;  
+            int type = 0;
 
-            if (parsedInput[0][0].Equals('\'') || parsedInput[0][0].Equals('"') || parsedInput[0] == "say")
+            if (Program.am.MatchesAction(parsedInput[0], "speech") || Program.am.MatchesAction(parsedInput[0][0].ToString(), "speech"))
                 type = (int)ActionType.SPEECH;
             else if (parsedInput[0].Equals("go") || parsedInput[0].Equals("move"))
                 type = (int)ActionType.MOVEMENT;
